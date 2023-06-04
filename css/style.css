@@ -1,0 +1,81 @@
+/* Custom Properties */
+:root{
+    --first-color: #fb8c00;
+    --second-color: #64ffda;
+    --third-color: #b2ff59;
+    --fourth-color: #fff176;
+    --fifth-color: #f9a825;
+}
+
+/* Reset Styles */
+body{
+    font-family: 'Playfair Display', serif;
+}
+
+/* Bootstrap Styles */
+.bg-body-tertiary{
+    background: var(--fifth-color) !important;
+}
+
+.navbar-brand img{
+    width: auto;
+    height: 30px;
+}
+
+.nav-item:hover{
+    background-color: var(--first-color);
+}
+
+.nav-item{
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    transition: all 0.2s ease-out;
+}
+
+.nav-link{
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: var(--fourth-color);
+}
+
+
+
+/* My Styles */
+
+
+
+/* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+
+
+/*Estilo al carrusel de fotos del home*/
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
