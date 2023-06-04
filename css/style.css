@@ -4,7 +4,7 @@
     --second-color: #64ffda;
     --third-color: #b2ff59;
     --fourth-color: #fff176;
-    --fifth-color: #f9a825;
+    --fifth-color: #ef6c00;
 }
 
 /* Reset Styles */
@@ -12,14 +12,40 @@ body{
     font-family: 'Playfair Display', serif;
 }
 
+a{
+    color: black;
+    font-weight: bold;
+    transition: all 0.2s ease-out;
+}
+
+
 /* Bootstrap Styles */
 .bg-body-tertiary{
     background: var(--fifth-color) !important;
 }
 
+.card{
+    margin-right: 100px;
+}
+
+.card img{
+    width: auto;
+    height: 400px;
+}
+
+.dropdown-item{
+    color: var(--first-color);
+}
+
+.dropdown-item:hover{
+    color: var(--fourth-color);
+    background-color: var(--first-color);
+    
+}
+
 .navbar-brand img{
     width: auto;
-    height: 30px;
+    height: 90px;
 }
 
 .nav-item:hover{
@@ -27,12 +53,12 @@ body{
 }
 
 .nav-item{
-    padding-left: 0.5rem;
     margin-left: 0.5rem;
     transition: all 0.2s ease-out;
 }
 
 .nav-link{
+    margin-left: 0.5rem;
     color:white;
     font-size: 20px;
     font-weight: bold;
@@ -42,10 +68,17 @@ body{
     color: var(--fourth-color);
 }
 
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 
 
 /* My Styles */
-
+.bg-apartados{
+    background: linear-gradient(45deg, #ffca28 ,#ffe082, #fff9c4);
+}
 
 
 /* X-Small devices (portrait phones, less than 576px)
@@ -72,10 +105,5 @@ body{
 }
 
 
-/*Estilo al carrusel de fotos del home*/
 
-.carousel-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
+
