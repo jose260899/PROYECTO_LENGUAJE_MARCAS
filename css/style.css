@@ -13,7 +13,7 @@ body{
 }
 
 a{
-    color: black;
+    color: var(--second-color);
     font-weight: bold;
     transition: all 0.2s ease-out;
 }
@@ -21,11 +21,11 @@ a{
 
 /* Bootstrap Styles */
 .bg-body-tertiary{
-    background: var(--fifth-color) !important;
+    background: var(--first-color) !important;
 }
 
 .card{
-    margin-right: 100px;
+    margin: 30px;
 }
 
 .card img{
@@ -49,7 +49,7 @@ a{
 }
 
 .nav-item:hover{
-    background-color: var(--first-color);
+    background-color: var(--fifth-color);
 }
 
 .nav-item{
@@ -59,7 +59,7 @@ a{
 
 .nav-link{
     margin-left: 0.5rem;
-    color:white;
+    color:var(--second-color);
     font-size: 20px;
     font-weight: bold;
 }
@@ -72,7 +72,9 @@ a{
     width: 100%;
     height: auto;
     object-fit: cover;
-  }
+}
+
+
 
 
 /* My Styles */
@@ -86,6 +88,7 @@ a{
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -94,6 +97,9 @@ a{
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .nav-item:hover{
+        background-color: transparent;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
