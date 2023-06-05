@@ -29,9 +29,14 @@ a{
 }
 
 .card img{
-    width: auto;
+    width: 100%;
     height: 400px;
 }
+
+.card a{
+    color: black;
+}
+
 
 .dropdown-item{
     color: var(--first-color);
@@ -69,11 +74,10 @@ a{
 }
 
 .carousel-item img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 500px;
     object-fit: cover;
 }
-
 
 
 
