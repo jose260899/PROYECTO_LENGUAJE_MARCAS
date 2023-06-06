@@ -59,9 +59,61 @@
         <div class="container">
             <h1 class="text-center">Valoración</h1>
 
-            
+            <form>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="valoracion" class="form-label">Valoración:</label>
+                <select class="form-select" id="valoracion" required>
+                  <option value="" selected disabled>Seleccione una opción</option>
+                  <option value="excelente">Excelente</option>
+                  <option value="bueno">Bueno</option>
+                  <option value="regular">Regular</option>
+                  <option value="malo">Malo</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="comentario" class="form-label">Comentario:</label>
+                <textarea class="form-control" id="comentario" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button type="reset" class="btn btn-secondary">Limpiar</button>
+
+            </form>
+            <br><br>
+            <section>
+              <h2>Valoraciones de los usuarios</h2>
+              <br>
+              <div class="valoraciones">
+                <div class="valoracion">
+                  <h3>Valoración de Juan</h3>
+                  <p>Valoración: Excelente</p>
+                  <p>Comentario: ¡Una experiencia increíble! El lugar es maravilloso y el servicio fue excelente. Sin duda lo recomendaría.</p>
+                </div>
+                <div class="valoracion">
+                  <h3>Valoración de María</h3>
+                  <p>Valoración: Bueno</p>
+                  <p>Comentario: Me gustó mucho el lugar, aunque creo que podrían mejorar en algunos aspectos. En general, fue una buena experiencia.</p>
+                </div>
+                <div class="valoracion">
+                  <h3>Valoración de Pedro</h3>
+                  <p>Valoración: Regular</p>
+                  <p>Comentario: No fue exactamente lo que esperaba. Algunos aspectos no estuvieron a la altura de mis expectativas.</p>
+                </div>
+              </div>
+            </section>
 
         </div>
+
+        
+
+        
        
       </main>
 
