@@ -162,3 +162,28 @@ a{
         margin-bottom: 5px;
       }
 
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+  
+      th {
+        background-color: #F47A20;
+        color: white;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #FDF3EB;
+      }
+  
+      th, td:hover {
+        background-color: #fb8c00;
+        color: white;
+      }
+  
