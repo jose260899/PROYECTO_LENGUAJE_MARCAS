@@ -67,14 +67,26 @@
               </div>
               <div class="mb-3">
                 <label for="valoracion" class="form-label">Valoración:</label>
-                <select class="form-select" id="valoracion" required>
-                  <option value="" selected disabled>Seleccione una opción</option>
-                  <option value="excelente">Excelente</option>
-                  <option value="bueno">Bueno</option>
-                  <option value="regular">Regular</option>
-                  <option value="malo">Malo</option>
-                </select>
+                <div>
+                  <div class="inline-input">
+                    <input type="radio" name="valoracion" value="excelente" required>
+                    <span>Excelente</span>
+                  </div>
+                  <div class="inline-input">
+                    <input type="radio" name="valoracion" value="bueno" required>
+                    <span>Bueno</span>
+                  </div>
+                  <div class="inline-input">
+                    <input type="radio" name="valoracion" value="regular" required>
+                    <span>Regular</span>
+                  </div>
+                  <div class="inline-input">
+                    <input type="radio" name="valoracion" value="malo" required>
+                    <span>Malo</span>
+                  </div>
+                </div>
               </div>
+              
               <div class="mb-3">
                 <label for="comentario" class="form-label">Comentario:</label>
                 <textarea class="form-control" id="comentario" rows="3" required></textarea>

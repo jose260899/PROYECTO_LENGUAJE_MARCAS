@@ -173,3 +173,10 @@ th, td:hover {
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
 }
+
+
+.inline-input {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 30px;
+}
