@@ -5,6 +5,7 @@
     --third-color: #b2ff59;
     --fourth-color: #fff176;
     --fifth-color: #ef6c00;
+   
 }
 
 /* Reset Styles */
@@ -18,10 +19,26 @@ a{
     transition: all 0.2s ease-out;
 }
 
+#mapa {
+  margin: 0 auto;
+  width: 65%;
+  height: 500px;
+  }
+
 
 /* Bootstrap Styles */
 .bg-body-tertiary{
     background: var(--first-color) !important;
+}
+
+.btn-primary {
+  background-color: orange;
+  border-color: orange;
+}
+
+.btn-secondary {
+  background-color: red;
+  border-color: red;
 }
 
 .card{
@@ -79,11 +96,54 @@ a{
     object-fit: cover;
 }
 
+#contacto{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.valoraciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.valoracion {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.valoracion h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.valoracion p {
+  margin-bottom: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
 
 
-/* My Styles */
-.bg-apartados{
-    background: linear-gradient(45deg, #ffca28 ,#ffe082, #fff9c4);
+tr:nth-child(even) {
+  background-color: #FDF3EB;
+}
+
+th, td:hover {
+  background-color: var(--first-color);
+  color: var(--fourth-color);
 }
 
 
@@ -113,77 +173,3 @@ a{
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
 }
-
-
-.btn-primary {
-    background-color: orange;
-    border-color: orange;
-  }
-  
-  .btn-secondary {
-    background-color: red;
-    border-color: red;
-  }
-
-  #map {
-    margin: 0 auto;
-    width: 70%;
-    height: 500px;
-    border: 4px solid #000;
-    }
-
-
-    #contacto{
-        font-size: 25px;
-        font-weight: bold;
-    }
-
-    .valoraciones {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-      }
-    
-      .valoracion {
-        border: 1px solid #ddd;
-        padding: 20px;
-        border-radius: 5px;
-        background-color: #f9f9f9;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-    
-      .valoracion h3 {
-        color: #333;
-        font-size: 18px;
-        margin-bottom: 10px;
-      }
-    
-      .valoracion p {
-        margin-bottom: 5px;
-      }
-
-      table {
-        border-collapse: collapse;
-        width: 100%;
-      }
-  
-      th, td {
-        padding: 8px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-      }
-  
-      th {
-        background-color: #F47A20;
-        color: white;
-      }
-  
-      tr:nth-child(even) {
-        background-color: #FDF3EB;
-      }
-  
-      th, td:hover {
-        background-color: #fb8c00;
-        color: white;
-      }
-  
